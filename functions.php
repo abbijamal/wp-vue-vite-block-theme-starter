@@ -135,7 +135,7 @@ function assetUrl(string $entry): string
     $manifest = getManifest();
 
     return isset($manifest[$entry])
-        ? '/dist/' . $manifest[$entry]['file']
+        ? get_stylesheet_directory_uri() . '/dist/' . $manifest[$entry]['file']
         : '';
 }
 
@@ -146,7 +146,7 @@ function importsUrls(string $entry): array
 
     if (!empty($manifest[$entry]['imports'])) {
         foreach ($manifest[$entry]['imports'] as $imports) {
-            $urls[] = '/dist/' . $manifest[$imports]['file'];
+            $urls[] = get_stylesheet_directory_uri() . '/dist/' . $manifest[$imports]['file'];
         }
     }
     return $urls;
@@ -159,7 +159,7 @@ function cssUrls(string $entry): array
 
     if (!empty($manifest[$entry]['css'])) {
         foreach ($manifest[$entry]['css'] as $file) {
-            $urls[] = '/dist/' . $file;
+            $urls[] = get_stylesheet_directory_uri() . '/dist/' . $file;
         }
     }
     return $urls;
