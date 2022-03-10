@@ -19,11 +19,12 @@ import path from "path";
 export default defineConfig({
   plugins: [
     vue(),
-    liveReload([
+    liveReload(
       // edit live reload paths according to your source code
       // for example:
       __dirname + "/(parts|templates)/**/*.html",
-    ]),
+      { alwaysReload: true }
+    ),
   ],
 
   // config
