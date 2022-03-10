@@ -12,8 +12,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.4",
+    "sass": "^1.49.9",
+    "typescript": "^4.6.2",
     "vite": "^2.8.6",
-    "vite-plugin-live-reload": "^2.1.0",
-    "typescript": "^4.6.2"
+    "vite-plugin-live-reload": "^2.1.0"
   }
 }
