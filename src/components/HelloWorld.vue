@@ -1,6 +1,10 @@
 <template>
   <!-- // TODO: Must be fixed-->
-  <!-- <img alt="Vue logo" src="/images/logo.png" height="40" /> -->
+  <img
+    alt="Vue logo"
+    src="/wp-content/themes/wp-vite-block-theme/src/images/logo.svg"
+    height="40"
+  />
 
   <h1>Vue {{ msg }}</h1>
   :)
